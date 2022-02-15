@@ -1,0 +1,101 @@
+:root{
+    --header-height: 18vh;
+    --header-page-links-height: 7vh;
+    --header-page-links-width: 25vw;
+    --header-links-height: 6vh;
+    --header-links-width: 7vw;
+    --header-background-color:#398AB9;
+    --header-color: #EEEEEE ;
+    --header-details-info-profile-pic: 10vh;
+}
+
+.container-header{
+    width:100vw;
+    height: var(--header-height);
+    background-color: var(--header-background-color) ;
+    color: var(--header-color);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.page-header{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: red;*/ /*to be commented*/
+    z-index: inherit;
+}
+
+.page-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background-color: red;*/
+    position: relative;
+    height: var(--header-page-links-height);
+    z-index: inherit;
+    width: var(--header-page-links-width);
+}
+
+.link-info-buttons{
+    border: 3px solid #D8D2CB;
+    font-size: 20px;
+    color:#EEEEEE;
+    background-color: #1C658C;
+    border-radius: 20%;
+    z-index: inherit;
+    width: var(--header-links-width);
+    height: var(--header-links-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title-container{
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    width: var(--header-page-links-width);
+}
+
+.page-title{
+    font-size: 90px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: red;*/
+    width: 22vw;
+    height: var(--header-height);
+}
+
+.profile-info-pic{
+    width: auto;
+    height: var(--header-details-info-profile-pic);
+    border-radius: 50%;
+    border: 1px solid #000;
+    /*background-color: red;*/
+
+}
+
+.profile-info-details{
+    /*background-color: red;*/
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-info-details-text{
+    font-size: 20px;
+}
