@@ -158,7 +158,7 @@
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    height:15vh;
+    height:9vh;
 }
 
 .info-work-heading-title{
@@ -179,5 +179,8 @@
 }
 
 .content-info{
-    font-size: 2vh;
+    font-size: 2.5vh;
+    /* background-color:red; */
+    width: 20vw;
+    height: 40vh;
 }
