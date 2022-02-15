@@ -45,6 +45,19 @@
     width: var(--header-page-links-width);
 }
 
+.link-info-buttons:hover{
+    animation: mouse-on-links 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mouse-on-links {
+    100% {
+        background-color: #85b4ce;
+        color:#000;
+        border-radius: 5%;
+    }
+  }
+
 .link-info-buttons{
     border: 3px solid #D8D2CB;
     font-size: 2vh;
@@ -102,7 +115,7 @@
     font-size: 2vh;
 }
 
-.container-info-me{
+.container-info-work{
     position:absolute;
     height: 700px;
     width: 100vw;
