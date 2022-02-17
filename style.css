@@ -25,6 +25,7 @@
 
 
 .page-header{
+    padding: 0% 2%;
     position: relative;
     height: var(--header-height);
     display: flex;
@@ -56,16 +57,17 @@
     100% {
         background-color: #85b4ce;
         color:#000;
-        border-radius: 5%;
+        border-radius: 5px;
     }
   }
 
 .link-info-buttons{
+    text-decoration: none;
     border: 3px solid #D8D2CB;
-    font-size: 2vh;
+    font-size: 2.2vh;
     color:#EEEEEE;
     background-color: #1C658C;
-    border-radius: 20%;
+    border-radius: 10px;
     z-index: 10;
     width: var(--header-links-width);
     height: var(--header-links-height);
@@ -93,18 +95,26 @@
 .profile-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /*background-color: red;*/
     width: 22vw;
-    height: var(--header-height);
+    /* height: var(--header-height); */
+    height: 15vh;
+    background-color:#2C3333; 
+    border-radius: 10px ;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #398AB9;
 }
 
 .profile-info-pic{
     width: auto;
     height: var(--header-details-info-profile-pic);
-    border-radius: 50%;
-    border: 1px solid #000;
+    border-radius: 10px ;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2C3333;
     /*background-color: red;*/
 
 }
@@ -125,6 +135,7 @@
 
 
 .container-info-work{
+    /* padding: 0% 2%; */
     position:absolute;
     height: 60vh;
     width: 100vw;
