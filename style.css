@@ -24,7 +24,7 @@
 
 
 .page-header{
-    padding: 0% 2%;
+    padding: 0% 12.4%;
     position: relative;
     height: var(--header-height);
     display: flex;
@@ -79,13 +79,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:#ECDBBA;
+    border: 3px solid #ECDBBA;
+    border-radius: 10px;
     align-items: center;
-    height: var(--header-height);
+    height: 80%;
     width: var(--header-page-links-width);
 }
 
 .page-title{
     font-size: 10vh;
+    color: #191919;
 }
 .page-title-under{
     font-size: 1vh;
@@ -97,12 +101,12 @@
     justify-content: space-around;
     align-items: center;
     width: 22vw;
-    height: 15vh;
-    background-color:#2D4263; 
+    height: 50%;
+    background-color:#191919; 
     border-radius: 10px ;
     border-width: 5px;
     border-style: solid;
-    border-color: #2D4263;
+    border-color: #191919;
 }
 
 .profile-info-pic{
@@ -111,16 +115,20 @@
     border-radius: 10px ;
     border-width: 5px;
     border-style: solid;
-    border-color: #2D4263;
+    border-color: #191919;
 
 }
 
 .profile-info-details{
     display:flex;
     flex-direction: column;
+    /* background-color: red; */
+    height: 85%;
+    justify-content: space-around;
 }
 
 .profile-info-details-text{
+    color: #F5F2E7;
     font-size: 2vh;
 } 
 
@@ -132,7 +140,7 @@
 .container-info-work{
     position:absolute;
     /* position: relative; */
-    height: 240vh;
+    height: 260vh;
     width: 100%;
     left:0px;
     top:18vh;
@@ -142,6 +150,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items:center;
+}
+
+.container-info-me{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    top:278vh;
+    left: 0vw;
+    height:55vh;
+    width:100%;
+    background-color:#2D4263;
+    z-index: 5;
 }
 
 .info-work{
@@ -224,27 +246,15 @@
   flex: 0 0 auto;
 }
 
-.container-info-me{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
-    top:258vh;
-    left: 0vw;
-    height:75vh;
-    width:100%;
-    background-color:#2D4263;
-    z-index: 5;
-}
+
 
 .container-info-me-details{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:space-around;
     background-color:#191919;
     align-items: center;
-    height:20vh;
+    height:10%;
     width: 75%;
     border-radius: 10px;
     border: 2px solid #191919;
@@ -253,7 +263,11 @@
 #info-me-about-me{
     text-align: left;
     color: #F5F2E7;
-    width: 75%;
+    background-color:#191919;
+    height:50%;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid #191919;
 }
 
 .container-info-past{
