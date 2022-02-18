@@ -122,14 +122,14 @@
 .profile-info-details{
     display:flex;
     flex-direction: column;
-    /* background-color: red; */
+    background-color: #191919;
     height: 85%;
     justify-content: space-around;
 }
 
 .profile-info-details-text{
-    color: #F5F2E7;
-    font-size: 2vh;
+    color: #EEE;
+    font-size: 125%;
 } 
 
 
