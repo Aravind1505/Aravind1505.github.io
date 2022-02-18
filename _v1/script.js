@@ -43,5 +43,4 @@ for (let i = 0; i < projects_list_array_html.length; i++) {
 }
 
 //Remove links
-
 //Fix Body Padding issues and make it responsive using %s according to container width
