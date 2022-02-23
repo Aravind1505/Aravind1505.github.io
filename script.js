@@ -43,7 +43,7 @@ for (let i = 0; i < projects_list_array_html.length; i++) {
 }
 
 //Remove links
-if(window.innerWidth <= 400){
+if(window.innerWidth <= 450){
 document.styleSheets[0].disabled = true;
 }
     else{
