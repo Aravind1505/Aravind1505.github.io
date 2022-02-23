@@ -239,8 +239,7 @@
     margin:0;
 }
 
-.content-info > ul > li
-{
+.content-info > ul > li{
   flex: 0 0 auto;
 }
 
@@ -261,7 +260,8 @@
 #info-me-about-me{
     text-align: left;
     color: #F5F2E7;
-    background-color:#191919;
+    font-size: 2.5vh;
+    /* background-color:red; */
     height:50%;
     width: 50%;
     border-radius: 10px;
