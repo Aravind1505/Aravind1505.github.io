@@ -4,12 +4,13 @@
         border: 0%;
         margin: 0%;
         /* background-color: #2D4263; */
+        font-family: "Redressed";
         background-image: linear-gradient(to bottom right, #C84B31,#2D4263,#C84B31); 
     }
 
     /* header */
     .container-header{
-        width: 100%;
+        width: 96%;
         padding: 2% 0%;
         position: relative;
         height: 15vh;/*Change later*/
@@ -65,6 +66,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     /* mid-body */
@@ -199,12 +201,12 @@
         display: flex;
         flex-flow: column wrap;
         height: 100%;
-        width: inherit;
+        width: 90%;
         margin:0;
     }
 
     .content-info > ul > li{
-        flex: 0 0 auto;
+        flex: 0 0 2vh;
     }
 
     .container-info-me{
@@ -218,7 +220,7 @@
     }
 
     .container-info-past{
-        width: 98%;
+        width: 96%;
         height: 100%;
         padding: 0% 2%;
         display: flex;
