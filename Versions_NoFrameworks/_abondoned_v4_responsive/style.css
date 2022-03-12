@@ -1,0 +1,141 @@
+/*  https://colorhunt.co/palette/5463ffecececffc300ff1818 
+    https://colorhunt.co/palette/5463ffecececffc300ff1818 
+    https://colorhunt.co/palette/0513672d31fa5d8bf4dff6ff */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0ece3;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+
+.container-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f0ece3;
+  color: #c7b198;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-title-container {
+  text-align: center;
+  padding: 0px 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1 0 0;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  flex: 1 1 0;
+}
+
+.page-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: red; */
+  flex: 5 1 0;
+}
+
+.link-info-buttons {
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  background-color: #c7b198;
+  border-radius: 5px;
+  color: #f0ece3;
+  margin: 1rem;
+  padding: 1rem 0 0 0;
+  text-decoration: none;
+  flex: 1 1 1;
+}
+
+@media screen and (max-width: 629px) {
+  .page-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5 1 0;
+  }
+}
+
+.link-info-buttons:hover {
+  background-color: #8e806a;
+  color: #f0ece3;
+}
+
+/* Content */
+#temp_placeholder_header {
+}
+
+.container-info-work {
+  padding: 0px 6.25vh;
+}
+
+.container-info-me-details {
+  /* background-color: #f0ece3; */
+  /* background-color: red; */
+  padding: 4vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+}
+
+@media screen and (min-width: 484px) and (max-width: 1084px) {
+  .container-info-me-details {
+    padding: 4vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+  }
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex: 1 1 0; */
+}
+
+.profile-info-pic {
+  border-radius: 10px;
+  min-width: 120px;
+  max-width: 175px;
+  max-height: 80px;
+}
+
+.profile-info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* flex: 1 1 0; */
+  padding: 10px;
+}
+
+#info-me-about-me {
+  /* background-color: red; */
+  padding: 30px 10px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+}

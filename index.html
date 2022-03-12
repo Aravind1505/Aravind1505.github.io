@@ -1,122 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Redressed&display=swap">
-    <link rel="stylesheet" href="style_m.css">
-    <script src="script.js" type="text/javascript" defer></script>
-</head>
-
-<body>
-    <div class="container-header">
-        <header class="page-header">
-            <!--title-->
-            <div class="page-title-container">
-                <h1 class="page-title">Portfolio<label class="page-title-under"></label></h1>
-            </div>
-            
-            <!--page links-->
-            <div class="page-links">
-                <a href="#link_info_work" class="link-info-buttons">My Work</a>
-                <a href="#link_info_me" class="link-info-buttons">About Me</a>
-                <a href="#link_info_contact" class="link-info-buttons">Contact Me</a>
-            </div>
-        </header>
-    </div>
-
-    <!--Mid-Body-->
-    <div id="temp_placeholder_header"></div>
-    <div class="container-info-work" id="link_info_work">
-        <div class="container-info-me-details">
-            <div class="profile-info">
-                <img src="res/img/profile_pic.jpg" alt="profile_photo" class="profile-info-pic">
-                <div class="profile-info-details">
-                    <label class="profile-info-details-text">Aravind Kanamarlapudi</label>
-                    <label class="profile-info-details-text">(+91)7013577861</label>
-                    <label class="profile-info-details-text">karavind246815@gmail.com</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Journey
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#education">Education</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Achievements</a></li>
+                                    <li><a class="dropdown-item" href="#">Experience</a></li> -->
+                                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                                    <li><a class="dropdown-item" href="#certifications">Certifications</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact Me</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <label id="info-me-about-me">As a passionate learner who enjoys solving challenges, my goal is to
-                work with an organization where my knowledge and skills help in
-                assisting the growth of the organization as well as my professional
-                goals.
-            </label>
-        </div>
-        <div class="info-work" id="skills">
-            <div class="info-work-design">
-                <img src="res/img/skills_background.svg">
-            </div>
-            <div class="content-info" id="content-info-skills">
-                <div class="content-info-heading-container">
-                    <label class="content-info-heading">SKILLS</label>
-                </div>
-                <ul id="content-info-skills-list">
-                </ul>
-            </div>
-        </div>
-        <div class="info-work" id="projects" >
-            <div class="info-work-design">
-                <img src="res/img/projects_background.svg">
-            </div>
-            <div class="content-info" id="content-info-projects">
-                <div class="content-info-heading-container">
-                    <label class="content-info-heading">PROJECTS</label>
-                </div>
-                <ul id="content-info-projects-list">
-                </ul>
-            </div>
-        </div>
-        <div class="info-work" id="courses">
-            <div class="info-work-design">
-                <img src="res/img/courses_background.svg">
-            </div>
-            <div class="content-info" id="content-info-courses">
-                <div class="content-info-heading-container">
-                    <label class="content-info-heading">COURSES</label>
-                </div>
-                <ul id="content-info-courses-list">
-                </ul>
-            </div>
-        </div>
-    </div>
+        </nav>
 
-    <!--Bottom-->
+        <!-- intro -->
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <div class="row align-items-center text-white">
+                    <div class="col-md-6 intros">
+                        <h1 class="display-2">
+                            <span class="display-2--intro">Hey, I'm Aravind</span>
+                            <span class="display-2--description lh-base">I am Full stack Web developer and ML/AI enthusiast also specializing in Cyber Security.</span>
+                        </h1>
+                    </div>
+                    <div class="col-md-6 intros text-md-end">
+                        <!-- https://www.manypixels.co/gallery -->
+                        <img src="assets/img/Coding _Outline.png" alt="img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FFF" fill-opacity="1"
+                    d="M0,96L60,106.7C120,117,240,139,360,165.3C480,192,600,224,720,202.7C840,181,960,107,1080,85.3C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+                <!-- https://getwaves.io/ -->
+            </svg>
+        </section>
 
-    <div class="container-info-me" id="link_info_me">
-        
-        <div class="container-info-past">
-            <div class="container-info-section" id="container-education-info">
-                <label class="container-info-records-header">Education </label>
-                <label class="container-info-records">2019 : Present: MUJ - 8.3 CGPA</label>
-                <label class="container-info-records">12th : FIITJEE - 85.3%</label>
-                <label class="container-info-records">10th : Gitanjali Devshala - 73%</label>
+        <!-- Education -->
+        <section class="education-section" id="education">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-5">
+                        <img src="assets/img/Education_illustration.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 ">
+                        <h4 class="fw-bold lead mb-3 education-heading">Education</h4>
+                        <table class="table table-borderless education-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Institution Name</th>
+                                    <th scope="col">Passing Year</th>
+                                    <th scope="col">Percentage/CGPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Manipal University Jaipur</th>
+                                    <td>2023</td>
+                                    <td>8.3(Current)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FIITJEE</th>
+                                    <td>2019</td>
+                                    <td>85.3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Gitanjali Devshala</th>
+                                    <td>2017</td>
+                                    <td>73</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="container-info-section" id="container-awards-info">
-                <label class="container-info-records-header">Awards </label>
-                <label class="container-info-records">2019 : InterCollege Codeathon - 2nd</label>
-                <label class="container-info-records">2014 : Inter school chess - 3rd</label>
-                <label class="container-info-records">2015 : Inter school tennis - 2nd</label>
-            </div>
-            <div class="container-info-section" id="container-experience-info">
-                <label class="container-info-records-header">Experience </label>
-                <label class="container-info-records">2019 : ACMMUJ - Volunteer</label>
-                <label class="container-info-records">2019 : U25MUJ - Volunteer</label>
-                <label class="container-info-records">2020 : TEDxMUJ - Volunteer</label>
-            </div>
-        </div>
-        
-        <div class="container-info-contact" id="link_info_contact">
-            <a class="contact-info-links" target="_blank" href="https://www.linkedin.com/in/aravind-kanamarlapudi-585445193/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white"/></a>
-            <a class="contact-info-links" target="_blank" href="mailto:karavind246815@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a>
-            <a class="contact-info-links" target="_blank" href="https://instagram.com/aravind.k_24"><img src="https://img.shields.io/badge/-@aravind.k__24-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
-            <a class="contact-info-links" target="_blank" href="https://github.com/Aravind1505"><img src="https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github"/></a>
-        </div>
-    </div>
-    
-</body>
+        </section>
 
+        <!-- Skills -->
+        <section class="skills-section" id="skills">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,64L60,74.7C120,85,240,107,360,133.3C480,160,600,192,720,176C840,160,960,96,1080,96C1200,96,1320,160,1380,192L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/img/Skills_Illustration.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="col-md-8 text-white">
+                        <h4 class="fw-bold lead mb-3 skills-heading">Skills</h4>
+                        <div class="container content-skills">
+                            <i class="fa-brands fa-java"></i>
+                            <i class="fa-solid fa-c"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3"></i>
+                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                            <i class="fa-brands fa-vuejs"></i>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-npm"></i>
+                            <i class="fa-brands fa-sass"></i>
+                            <i class="fa-brands fa-node"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FFF" fill-opacity="1"
+                    d="M0,96L60,106.7C120,117,240,139,360,165.3C480,192,600,224,720,202.7C840,181,960,107,1080,85.3C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+                <!-- https://getwaves.io/ -->
+            </svg>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="row">
+                    <h1 class="display-3 text-center">Projects</h1>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active " data-bs-interval="10000">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/Projects/inv+management.png" class="d-block img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Inventory Management</h5>
+                                    <p>Built in Java using Swing/Awt</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2000">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/Projects/physics-engine.png" class="d-block img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Physics Engine</h5>
+                                    <p>Built using p5js framework on Javascript</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/img/Projects/Toolkit.png" class="d-block img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Toolbox</h5>
+                                    <p>Basic functionalities in Java using GUI libraries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="certifications-section" id="certifications">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,64L60,74.7C120,85,240,107,360,133.3C480,160,600,192,720,176C840,160,960,96,1080,96C1200,96,1320,160,1380,192L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container text-white">
+                <div class="row">
+                    <h1 class="display-3 text-center">Certifications</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4"><img src="assets/img/certificates/Python Specialization-1.png" alt="" class="img-fluid "></div>
+                    <div class="col-md-4 mb-4"><img src="assets/img/certificates/Combinatoric and Probability-1.png" alt="" class="img-fluid "></div>
+                    <div class="col-md-4 mb-4"><img src="assets/img/certificates/Discrete_Mathematics-1.png" alt="" class="img-fluid "></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FFF" fill-opacity="1"
+                    d="M0,96L60,106.7C120,117,240,139,360,165.3C480,192,600,224,720,202.7C840,181,960,107,1080,85.3C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+                <!-- https://getwaves.io/ -->
+            </svg>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section" id="footer">
+            <div class="container">
+                <div class="row text-center ">
+                    <h1 class="display-2">Contact:</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1 class="fs-4">karavind246815@gmail.com</h1>
+                        <h1 class="fs-4">+91-7013577861</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/Aravind1505" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aravind-kanamarlapudi-585445193/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://www.hackerrank.com/karavind246815" target="_blank"> <i class="fa-brands fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Enable Bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.js"></script>
+    </body>
 </html>
